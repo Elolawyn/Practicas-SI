@@ -172,5 +172,4 @@ while (respuesta1 != "")
       end
     end
   end
-  cambio
 end
