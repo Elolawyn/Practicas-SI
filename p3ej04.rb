@@ -29,5 +29,4 @@ datos = File.read(ARGV[1])
 md5 = OpenSSL::Digest::MD5.new()
 hash = md5.hexdigest(datos)
 
-puts "###############################################"
-puts "# Hash: " + hash
+puts "MD5 de '" + ARGV[1] + "': " + hash
