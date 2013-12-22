@@ -17,16 +17,6 @@ end
 
 class ErrorEntrada_FicheroVacio < StandardError
 end
-
-#Llamadas al programa
-#0 1 2 3 4 5
-#-f fichero -h hash -a algoritmo 6
-#-f fichero -h hash 4
-#-c fichero fichero -a algoritmo 5
-#-c fichero fichero 3
-#-f fichero -a algoritmo 4
-#-f fichero 2
-
 system 'clear'
 
 numero_argumentos = ARGV.count
