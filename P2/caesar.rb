@@ -49,7 +49,6 @@ class CifradorCaesar
 	def abc()
 		alfabeto = (" ".."Z").to_a
 		alfabeto = alfabeto.concat(("a".."z").to_a)
-		alfabeto = alfabeto.concat(["á", "é", "í", "ó", "ú", "Á", "É", "Í", "Ó", "Ú"])
 		return alfabeto
 	end
 	#-----------------------------------------------------------------------------
