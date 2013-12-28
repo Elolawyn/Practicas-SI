@@ -29,7 +29,7 @@ File.open(ARGV[0], 'r') do |f|
 	end
 end
 
-for i in 1..25
+for i in 1..85
 	c = CifradorCaesar.new(i)
 	resultado = c.decodificar(texto_a_forzar)
 	puts "Iteración [" + i.to_s + "]: " + resultado
