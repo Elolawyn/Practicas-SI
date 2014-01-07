@@ -24,11 +24,11 @@ if ARGV.count != 4 then raise ErrorEntrada_NumeroIncorrectoArgumentos, "\nEl nú
 
 if ARGV[0].to_i <= 0 then raise ErrorEntrada_DesplazamientoNoPositivo, "\nEl desplazamiento de la encriptación Caesar debe ser un número positivo." + llamada_correcta end
 
-if ARGV[2] != "-o" then raise ErrorEntrada_ComandoDesconocido, "\nNo existe el comando \"" + ARGV[1] + "\"." + llamada_correcta end
+if ARGV[2] != "-o" then raise ErrorEntrada_ComandoDesconocido, "\nNo existe el comando \"" + ARGV[2] + "\"." + llamada_correcta end
 
-if File.exists?(ARGV[1]) == false then raise ErrorEntrada_NoExisteFichero, "\nNo existe el fichero \"" + ARGV[0] + "\""+ llamada_correcta end
+if File.exists?(ARGV[1]) == false then raise ErrorEntrada_NoExisteFichero, "\nNo existe el fichero \"" + ARGV[1] + "\""+ llamada_correcta end
 
-if File.zero?(ARGV[1]) == true then raise ErrorEntrada_FicheroVacio, "\nEl fichero \"" + ARGV[0] + "\" está vacío. " + llamada_correcta end
+if File.zero?(ARGV[1]) == true then raise ErrorEntrada_FicheroVacio, "\nEl fichero \"" + ARGV[1] + "\" está vacío. " + llamada_correcta end
 
 c = CifradorCaesar.new(ARGV[0].to_i)
 
